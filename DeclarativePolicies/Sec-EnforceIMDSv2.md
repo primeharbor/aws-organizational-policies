@@ -2,6 +2,8 @@
 
 This policy will configure the EC2 Service to require IMDSv2 in all accounts and regions.
 
+Do you need to know if IMDSv1 calls are happening in your environment? [PrimeHarbor has a script for that](https://github.com/jchrisfarris/aws_scripts/blob/master/bin/find_imdsv1.py)! If you have a cross-account audit role, you can run this to get the last week's worth of the `MetadataNoToken` CloudWatch Metric in each account and region.
+
 ## Declarative Policy
 ```json
 {
